@@ -1,52 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- My Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Viga&display=swap" rel="stylesheet">
-
-  <!-- MY CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobile.css">
-
-  <title>Michael & Co</title>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <section id="header">
-    <div class="row">
-      <div class=col-lg-12>
-        <nav class="navbar navbar-expand-lg navbar-light bg-orange">
-          <div class="container">
-            <a class="navbar-brand" href="#"><img src="./img/logo.png">SYN EXPRESS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="./layanan.html">Layanan Kami</a>
-                <a class="nav-link" href="./contact_us.html">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    </nav>
-  </section>
-  <!-- AKHIR HEADER -->
-
   <!-- BANNER -->
   <section id="banner">
     <div class="row justify-content-center">
@@ -115,9 +66,9 @@
                 <div class="col-lg-5 cek-ongkir">
                   <h1>Hitung Ongkos Kirim</h1>
                   <p>
-                  <h6>Hitung Estimasi biaya pengiriman paket anda
-                    dengan menginput kota asal, kota tujuan dan
-                    berat barang</h6>
+                    <h6>Hitung Estimasi biaya pengiriman paket anda
+                      dengan menginput kota asal, kota tujuan dan
+                      berat barang</h6>
                   </p>
                   <p><input class="form-control" type="text" placeholder="Kota Asal"></p>
                   <p><input class="form-control" type="text" placeholder="Kota Tujuan"></p>
@@ -130,7 +81,7 @@
                 <div class="col-lg-5 cek-ongkir">
                   <h1>Lacak Kiriman</h1>
                   <p>
-                  <h6>Lacak keberadaan paket anda dengan akurat</h6>
+                    <h6>Lacak keberadaan paket anda dengan akurat</h6>
                   </p>
                   <p><input class="form-control lacakform" type="text" placeholder="Lacak Kiriman Anda"></p>
                   <img class="img-lacak" src="./img/cek-ongkir.png">
@@ -203,10 +154,10 @@
               <div class="col-lg-5">
                 <img class="img-lebihakurat" src="./img/lebih_akurat.png">
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- END LEBIH AKURAT -->
 
@@ -295,7 +246,7 @@
         <div class="col-lg-12">
           <H2>APA KATA MEREKA</H2>
           <p>
-          <H3>TENTANG KAMI?</H3>
+            <H3>TENTANG KAMI?</H3>
           </p>
           <hr>
         </div>
@@ -304,10 +255,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-3 apakata1">
                 <H2>ALATSELAM.COM</H2>
-                <p><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img class="img-bintang"
-                    src="/img/star.png" alt="" class=""></img><img class="img-bintang" src="/img/star.png" alt=""
-                    class=""></img><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img
-                    class="img-bintang" src="/img/star.png" alt="" class=""></img></p>
+                <p><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img class="img-bintang" src="/img/star.png" alt="" class=""></img><img class="img-bintang" src="/img/star.png" alt="" class=""></img></p>
                 <p>Kami sudah gunakan SYN Express sejak 2018.
                   Dengan layanan mereka yang cepat, kami
                   dapat melayani pelanggan kami tanpa harus
@@ -318,10 +266,7 @@
               </div>
               <div class="col-lg-3 kotakreview1">
                 <img class="img-apakata" src="./img/review-photo1.png"></img>
-                <p><img class="img-bintang1" src="/img/star.png" alt="" class=""></img><img class="img-bintang1"
-                    src="/img/star.png" alt="" class=""></img><img class="img-bintang1" src="/img/star.png" alt=""
-                    class=""><img class="img-bintang1" src="/img/star.png" alt="" class=""></img><img
-                    class="img-bintang1" src="/img/star.png" alt="" class=""></img></p>
+                <p><img class="img-bintang1" src="/img/star.png" alt="" class=""></img><img class="img-bintang1" src="/img/star.png" alt="" class=""></img><img class="img-bintang1" src="/img/star.png" alt="" class=""><img class="img-bintang1" src="/img/star.png" alt="" class=""></img><img class="img-bintang1" src="/img/star.png" alt="" class=""></img></p>
                 <div class="textreview">
                   <p>Simple, Cepat & Terpercaya
                     F Mutya - SEGERAKU.COM</p>
@@ -346,59 +291,3 @@
     </div>
   </section>
   <!-- END APA KATA -->
-
-  <!-- BEGIN FOOTER -->
-  <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 bg-footer">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 kata1">
-              <h5><u>Ada Untuk Anda</h5></u>
-              <H6>Percayakan pengiriman anda dengan kami.
-                Aman, cepat dan terpercaya.
-                Rasakan pelayanan terbaik kami hari ini juga.</H6>
-            </div>
-            <div class="col-lg-4 kata1">
-              <H5><u>Perusahaan Kami</u></H5>
-              <p>
-              <H6>Layanan Kami</H6>
-              </p>
-              <p>
-              <H6>YES (Yakin Esok Sampai)</H6>
-              </p>
-              <p>
-              <H6>REG (Reguler)</H6>
-              </p>
-            </div>
-            <div class="col-lg-4 kata1">
-              <h5><u>Pusat</h5></u>
-              <h6><br />Mangga 2 Square
-                <br />Rukan Blok E No.31
-                <br />Jakarta Utara 14420</h6>
-              <p><img src="./img/media-twitter.png" alt="">
-                <img src="./img/media-facebook.png" alt="">
-                <img src="./img/media-whatsapp.png" alt="">
-                <img src="./img/media-ig.png" alt=""></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END FOOTER  -->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
