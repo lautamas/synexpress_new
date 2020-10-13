@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('Asia/Jakarta');
+
 $configTimeCookie  = (60 * 60) * 24;
 function notif($pesan, $jenisPesan)
 {
