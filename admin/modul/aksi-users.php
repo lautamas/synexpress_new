@@ -1,11 +1,10 @@
 <?php
 
 if (isset($_POST['save-users'])) {
-
    $ambilUsername = explode("@", $_POST['email']);
    $username = $ambilUsername[0];
 
-   $data = [
+   $x1 = [
       "email"        => $_POST['email'],
       "username"     => $username,
       "password"     => $_POST['password'],
@@ -14,16 +13,14 @@ if (isset($_POST['save-users'])) {
       "status"       => $_POST['status'] == 'on' ? 'Y' : 'N',
       "level"        => $_POST['level'],
       "createdAt"    => date("Y-m-d H:i:s"),
-
    ];
-   $insertData = insertUsers($data);
+   $insertData = masukkanData($x1);
 
    if ($insertData) {
       notif('Berhasil Menambahkan data Users', 'success');
       header("Location: ?page=users");
    }
 }
-
 
 if (isset($_POST['update-users'])) {
    $ambilUsername = explode("@", $_POST['email']);
@@ -46,6 +43,8 @@ if (isset($_POST['update-users'])) {
    if ($updateData) {
       notif("Berhasil Mengubah data Users", 'success');
       header("Location: ?page=users");
+   } else {
+      notif("Gagal Mengubah data Users");
    }
 }
 

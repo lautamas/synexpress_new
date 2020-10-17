@@ -1,7 +1,7 @@
 <h3>Data Users
    <a href="?page=add-users" class="btn btn-outline-info float-right"><i class="fa fa-plus"></i> Tambah Data</a>
 
-   <a href="?page=aksi-users&delete=all&id=<?php echo $data['id_user'] ?>" class="btn btn-outline-info float-right" onclick="return confirm('Yakin ingin menghapus data ? ')"><i class="fa fa-times"></i> Hapus SEMUA Data</a>
+   <a href="?page=aksi-users&delete=all" class="btn btn-outline-info float-right" onclick="return confirm('Yakin ingin menghapus data ? ')"><i class="fa fa-times"></i> Hapus Semua Data</a>
 
 </h3>
 <?php tampilNotif() ?>
@@ -30,7 +30,6 @@
             <td><?= $data['login_at'] ?></td>
             <td>
                <a href="?page=edit-users&id=<?= $data['id_user'] ?>" title="Ubah data"><i class="fa fa-edit text-info"></i></a> &nbsp;
-
                <a href="?page=aksi-users&delete=one&id=<?= $data['id_user'] ?>" title="Hapus data" onclick="return confirm('Yakin ingin menghapus data ? ')"><i class="fa fa-trash text-danger"></i></a>
             </td>
          </tr>

@@ -6,6 +6,7 @@ include '../koneksi/koneksi.php';
 include '../koneksi/helper.php';
 include '../model/get-fungsi.php';
 include 'model/m_users.php';
+include 'model/m_layanan.php';
 
 ?>
 <!doctype html>

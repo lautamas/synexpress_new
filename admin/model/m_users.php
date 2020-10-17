@@ -24,16 +24,16 @@ function getUsersByIdA($id)
 }
 
 
-function insertUsers($data)
+function masukkanData($terimaData, $terimaData2 = null)
 {
    global $koneksi;
-   $sql = "INSERT INTO `users`(`username`, `email`, `password`, `level`, `status`, `created_at`) VALUES ('$data[username]','$data[email]', '$data[password]', '$data[level]', '$data[status]', '$data[createdAt]')";
+   $sql = "INSERT INTO `users`(`username`, `email`, `password`, `level`, `status`, `created_at`) VALUES ('$terimaData[username]','$terimaData[email]', '$terimaData[password]', '$terimaData[level]', '$terimaData[status]', '$terimaData[createdAt]')";
    $insertUsers = mysqli_query($koneksi, $sql);
 
    $idUsers = mysqli_insert_id($koneksi);
 
    if ($insertUsers) {
-      $sql2 = "INSERT INTO `profil`(`nama_depan`, `nama_belakang`, `id_user`) VALUES ('$data[namaDepan]', '$data[namaBelakang]', '$idUsers')";
+      $sql2 = "INSERT INTO `profil`(`nama_depan`, `nama_belakang`, `id_user`) VALUES ('$terimaData[namaDepan]', '$terimaData[namaBelakang]', '$idUsers')";
       $insertProfil = mysqli_query($koneksi, $sql2);
 
       return $insertProfil;
@@ -46,27 +46,28 @@ function updateUsers($data)
    global $koneksi;
 
    // Jika password==kosong then tidak mengubah password else mengubah password
-   if ($_POST['password'] = "") {
+   if ($data['password'] == NULL) {
       $sqlUsers = "UPDATE `users` SET `username`='$data[username]',`email`='$data[email]',`level`='$data[level]',`status`='$data[status]',`updated_at`='$data[updatedAt]' WHERE id_user='$data[idUser]'";
-      $updateUsers = mysqli_query($koneksi, $sqlUsers);
    } else {
       $sqlUsers = "UPDATE `users` SET `username`='$data[username]',`email`='$data[email]',`password`='$data[password]',`level`='$data[level]',`status`='$data[status]',`updated_at`='$data[updatedAt]' WHERE id_user='$data[idUser]'";
-      $updateUsers = mysqli_query($koneksi, $sqlUsers);
+   }
+   $updateUsers = mysqli_query($koneksi, $sqlUsers);
 
-      if ($updateUsers) {
-         $sqlProfil = "UPDATE `profil` SET `nama_depan`='$data[namaDepan]',`nama_belakang`='$data[namaBelakang]' WHERE `id_user`= '$data[idUser]'";
-
-         $updateProfil = mysqli_query($koneksi, $sqlProfil);
-
-         return $updateProfil;
-      }
+   if ($updateUsers) {
+      $sqlProfil = "UPDATE `profil` SET `nama_depan`='$data[namaDepan]',`nama_belakang`='$data[namaBelakang]' WHERE `id_user`= '$data[idUser]'";
+      $updateProfil = mysqli_query($koneksi, $sqlProfil);
+      return $updateProfil;
    }
 }
 
-function deleteUsers($id)
+function deleteUsers($id = null)
 {
    global $koneksi;
-   $sql = "DELETE FROM `users` WHERE id_user='$id'";
+   if ($id == null) {
+      $sql = "DELETE FROM `users`";
+   } else {
+      $sql = "DELETE FROM `users` WHERE id_user='$id'";
+   }
    $query = mysqli_query($koneksi, $sql);
    return $query;
 }
